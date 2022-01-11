@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 .header {
@@ -27,4 +28,20 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.family-radio {
+  display: block;
+}
+
+.conteudo-checkbox {
+  display: block;
+}
+
+#opcoes {
+  display: flex;
 }
