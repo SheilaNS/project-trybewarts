@@ -12,15 +12,15 @@
 
 .header img {
   height: 50px;
-  margin: 5px;    
+  margin: 5px;
 }
 
 .trybewarts-login {
-  display: flex;    
+  display: flex;
 }
 
 main {
-  display: flex;   
+  display: flex;
 }
 
 #evaluation-form {
