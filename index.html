@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,35 @@
     <title>Trybewarts</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
-        <img src="images/trybewarts-header-logo.svg" alt="Trybewarts Logo" class="trybewarts-header-logo"> 
+        <img src="images/trybewarts-header-logo.svg" alt="Trybewarts Logo" class="trybewarts-header-logo">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form action="" method="get" class="trybewarts-login">
-            <input type="email" name="email" id="email" placeholder="Email"> 
+            <input type="email" name="email" id="email" placeholder="Email">
             <input type="password" name="password" id="password" placeholder="Senha">
-             <button type="submit" id="bt-login">Entrar</button>
+            <button type="submit" id="bt-login">Entrar</button>
         </form>
     </header>
     <main>
-     <form action="" method="get" id="evaluation-form">
-        <input type="text" name="nome" id="input-name" placeholder="Nome">
-        <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
-        <input type="email" name="email" id="input-email" placeholder="Email">
-        <select name="house-select" id="house">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-     </form>
-     <img src="images/trybewarts-colored.svg" alt="Trybewarts brasão colorido" id="trybewarts-forms-logo">
+        <form action="" method="get" id="evaluation-form">
+            <div>
+                <input type="text" name="nome" id="input-name" placeholder="Nome">
+                <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+            </div>
+            <div> <input type="email" name="email" id="input-email" placeholder="Email">
+                <select name="house-select" id="house">
+                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                </select>
+            </div>
+        </form>
+        <img src="images/trybewarts-colored.svg" alt="Trybewarts brasão colorido" id="trybewarts-forms-logo">
     </main>
-<script src="script.js"></script>  
+    <script src="script.js"></script>
 </body>
+
 </html>
