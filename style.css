@@ -1,4 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  height: 50px;
+  margin: 5px;    
+}
+
+.trybewarts-login {
+  display: flex;    
 }
