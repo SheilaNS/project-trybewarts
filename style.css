@@ -33,3 +33,15 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.family-radio {
+  display: block;
+}
+
+.conteudo-checkbox {
+  display: block;
+}
+
+#opcoes {
+  display: flex;
+}
