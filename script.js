@@ -31,3 +31,19 @@ function mudaBotao() {
 }
 
 concordar.addEventListener('click', mudaBotao);
+
+// Requisito 20
+const comentario = document.getElementById('textarea');
+const contaDiv = document.getElementById('counter');
+let conta = 500;
+contaDiv.innerText = conta;
+
+function contador() {
+  let caracteres = 0;
+  conta = 500;
+  caracteres = comentario.value.split('');
+  conta -= caracteres.length;
+  contaDiv.innerText = conta;
+}
+
+comentario.addEventListener('keyup', contador);
