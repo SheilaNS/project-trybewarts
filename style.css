@@ -5,6 +5,18 @@
   border: 1px solid red;
 }
 
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(50, 167, 145);
+}
+
+footer p {
+  align-self: center;
+  color: white;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -14,6 +26,17 @@
 .header img {
   height: 50px;
   margin: 5px;
+}
+
+.header h1 {
+  align-self: center;
+  color: white;
+}
+
+.header form {
+  align-self: center;
+  height: 30px;
+  margin-right: 5px;
 }
 
 .trybewarts-login {

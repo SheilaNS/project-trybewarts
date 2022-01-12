@@ -1,3 +1,4 @@
+// Requisito 3
 const entrar = document.getElementById('bt-login');
 
 function verificaLogin() {
@@ -10,6 +11,8 @@ function verificaLogin() {
 }
 entrar.addEventListener('click', verificaLogin);
 
+// Requisito 18: referência sobre o atributo disabled no StackOverflow
+// https://pt.stackoverflow.com/questions/153524/habilitar-e-desabilitar-um-bot%C3%A3o
 function enviaDados(event) {
   event.preventDefault();
 }
