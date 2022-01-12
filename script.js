@@ -9,3 +9,22 @@ function verificaLogin() {
   return alert('Olá, Tryber!');
 }
 entrar.addEventListener('click', verificaLogin);
+
+function enviaDados(event) {
+  event.preventDefault();
+}
+
+const concordar = document.getElementById('agreement');
+const enviar = document.getElementById('submit-btn');
+enviar.disabled = true;
+
+function mudaBotao() {
+  if (concordar.checked) {
+    enviar.disabled = false;
+    enviar.addEventListener('click', enviaDados);
+  } else {
+    enviar.disabled = true;
+  }
+}
+
+concordar.addEventListener('click', mudaBotao);
