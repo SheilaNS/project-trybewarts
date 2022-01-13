@@ -9,3 +9,13 @@ function verificaLogin() {
   return alert('Olá, Tryber!');
 }
 entrar.addEventListener('click', verificaLogin);
+
+const concordar = document.getElementById('agreement');
+if (concordar.checked) {
+  const enviar = document.getElementById('submit-btn');
+
+  function enviaDados() {
+      return
+  }
+  enviar.addEventListener('click', enviaDados);
+}
