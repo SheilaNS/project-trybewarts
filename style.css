@@ -2,7 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  border-style: none;
+  font-family: Crimson Pro, cursive;
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+  font-size: 1.1rem;
+}
+
+input , select {
+  font-size: 1.1rem;
+}
+
+footer {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(45, 45, 46);
+}
+
+footer p {
+  align-self: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+button {
+  width: 120px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: purple;
+  color: white;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+button:disabled {
+  background-color: lightpink;
 }
 
 .header {
@@ -13,35 +50,169 @@
 
 .header img {
   height: 50px;
-  margin: 5px;    
+  margin: 5px;
+}
+
+.header h1 {
+  align-self: center;
+  color: white;
+  font-weight: 900;
+}
+
+.header form {
+  align-self: center;
+  height: 40px;
+  margin: 5px;
+}
+
+hr {
+  border: 1px dashed gray;
+  width: 650px;
+  align-self: center;
+  margin: 10px;
 }
 
 .trybewarts-login {
-  display: flex;    
+  display: flex;
+}
+
+.trybewarts-login input {
+  border-radius: 5px;
+  width: 120px;
+  margin-right: 5px;
+  padding: 5px;
 }
 
 main {
-  display: flex;   
+  display: flex;
+  justify-content: center;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  margin: 20px 0 30px;
+}
+
+#evaluation-form h2 {
+  text-align: center;
+  height: 40px;
+  padding-top: 5px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  align-self: center;
+  margin: 10px;
 }
 
-.family-radio {
-  display: block;
+#house {
+  display: flex;
+  flex: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
 }
 
-.conteudo-checkbox {
-  display: block;
+#input-email {
+  display: flex;
+  flex: 100%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.grupo-nome , .grupo-email , .grupo-infos {
+  display: flex;
+}
+
+span , #submit-btn {
+  display: flex;
+  align-self: center;
+  margin: 2px 5px;
+}
+
+#submit-btn {
+  justify-content: center;
+  padding: 8px;
+}
+
+.grupo-nome input {
+  padding: 5px;
+}
+
+.grupo-nome input , .grupo-email div {
+  display: flex;
+  flex: 50%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+#label-family , #label-content , #label-rate , .textarea , #label-infos {
+  height: 30px;
+  display: flex;
+  margin: 0;
+  padding-top: 5px;
+}
+
+textarea {
+  border-radius: 5px;
+  resize: none;
+}
+
+#counter {
+  display: flex;
+  justify-content: end;
+  margin-right: 5px;
+  font-size: 0.8rem;
+}
+
+.radio {
+  display: flex;
+}
+
+.radio div {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  flex: 33%;
+}
+
+.radio label , .radio input {
+  align-self: center;
+  margin: 5px;
+}
+
+.grupo-infos input {
+  display: flex;
+  align-self: center;
+  margin-left: 5px;
+}
+
+.grupo-familia {
+  width: 250px;
+}
+
+.grupo-vontade {
+  width: 420px;
+}
+
+.grupo-nota {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grupo-familia label , .grupo-vontade label {
+  margin: 5px 0;
+}
+
+.nota {
+  display: inline-block;
+  align-self: center;
 }
 
 #opcoes {
   display: flex;
+  justify-content: center;
 }

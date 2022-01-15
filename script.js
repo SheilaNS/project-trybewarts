@@ -1,3 +1,4 @@
+// Requisito 3
 const entrar = document.getElementById('bt-login');
 
 function verificaLogin() {
@@ -10,6 +11,7 @@ function verificaLogin() {
 }
 entrar.addEventListener('click', verificaLogin);
 
+<<<<<<< HEAD
 const concordar = document.getElementById('agreement');
 if (concordar.checked) {
   const enviar = document.getElementById('submit-btn');
@@ -19,3 +21,41 @@ if (concordar.checked) {
   }
   enviar.addEventListener('click', enviaDados);
 }
+=======
+// Requisito 18: referência sobre o atributo disabled no StackOverflow
+// https://pt.stackoverflow.com/questions/153524/habilitar-e-desabilitar-um-bot%C3%A3o
+function enviaDados(event) {
+  event.preventDefault();
+}
+
+const concordar = document.getElementById('agreement');
+const enviar = document.getElementById('submit-btn');
+enviar.disabled = true;
+
+function mudaBotao() {
+  if (concordar.checked) {
+    enviar.disabled = false;
+    enviar.addEventListener('click', enviaDados);
+  } else {
+    enviar.disabled = true;
+  }
+}
+
+concordar.addEventListener('click', mudaBotao);
+
+// Requisito 20
+const comentario = document.getElementById('textarea');
+const contaDiv = document.getElementById('counter');
+let conta = 500;
+contaDiv.innerText = conta;
+
+function contador() {
+  let caracteres = 0;
+  conta = 500;
+  caracteres = comentario.value.split('');
+  conta -= caracteres.length;
+  contaDiv.innerText = conta;
+}
+
+comentario.addEventListener('keyup', contador);
+>>>>>>> 8f8a09bb8306d3f092a8b8905735653101fac733
